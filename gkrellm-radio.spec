@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://gkrellm.luon.net/files/%{name}-%{version}.tar.gz
+# Source0-md5:	0d1897d351d7dcc0eafe714fefd01d1b
 URL:		http://gkrellm.luon.net/gkrellm-radio.phtml
 BuildRequires:	gkrellm-devel >= 2.0.0
 Requires:	gkrellm >= 2.0.0
