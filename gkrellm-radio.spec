@@ -12,7 +12,6 @@ BuildRequires:	gkrellm-devel >= 2.0.0
 Requires:	gkrellm >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 A GKrellM plugin which allows you to control BTTV tuners from within
