@@ -2,15 +2,14 @@ Summary:	BTTV tuners plugin for gkrellm
 Summary(pl):	Plugin gkrellm do radio BTTV
 Summary(pt_BR):	Plugin gkrellm para o BTTV radio
 Name:		gkrellm-radio
-Version:	0.2.1
+Version:	2.0.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://www.cs.auc.dk/~larsch/gkrellm-radio/%{name}-%{version}.tar.gz
-Patch0:		%{name}-Makefile.patch
-URL:		http://www.cs.auc.dk/~larsch/gkrellm-radio/
-BuildRequires:	gkrellm-devel
-Requires:	gkrellm >= 1.0.2
+Source0:	http://gkrellm.luon.net/files/%{name}-%{version}.tar.gz
+URL:		http://gkrellm.luon.net/gkrellm-radio.phtml
+BuildRequires:	gkrellm-devel >= 2.0.0
+Requires:	gkrellm >= 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -26,8 +25,7 @@ Plugin GKrellM pozwalaj±cy na sterowanie tunerami BTTV.
 Um plugin GKrellM para controlar o BTTV radio a partir do GKrellM.
 
 %prep
-%setup -q
-%patch0 -p1
+%setup -q -n %{name}
 
 %build
 %{__make} \
@@ -36,9 +34,9 @@ Um plugin GKrellM para controlar o BTTV radio a partir do GKrellM.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_libdir}/gkrellm
+install -d $RPM_BUILD_ROOT%{_libdir}/gkrellm2
 
-install radio.so $RPM_BUILD_ROOT%{_libdir}/gkrellm
+install radio.so $RPM_BUILD_ROOT%{_libdir}/gkrellm2
 
 gzip -9nf README CHANGES
 
@@ -48,4 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%attr(755,root,root) %{_libdir}/gkrellm/radio.so
+%attr(755,root,root) %{_libdir}/gkrellm2/radio.so
