@@ -2,12 +2,12 @@ Summary:	BTTV tuners plugin for gkrellm
 Summary(pl):	Plugin gkrellm do radio BTTV
 Summary(pt_BR):	Plugin gkrellm para o BTTV radio
 Name:		gkrellm-radio
-Version:	2.0.1
-Release:	2
+Version:	2.0.4
+Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://gkrellm.luon.net/files/%{name}-%{version}.tar.gz
-# Source0-md5:	0d1897d351d7dcc0eafe714fefd01d1b
+# Source0-md5:	32dbaf2aa22c79708ed9d0635025dd94
 URL:		http://gkrellm.luon.net/gkrellm-radio.phtml
 BuildRequires:	gkrellm-devel >= 2.0.0
 Requires:	gkrellm >= 2.0.0
