@@ -8,8 +8,9 @@ License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
-Source0:	http://www.cs.auc.dk/~larsch/gkrellmradio/%{name}-%{version}.tar.gz
-URL:		http://www.cs.auc.dk/~larsch/gkrellmradio/
+Source0:	http://www.cs.auc.dk/~larsch/gkrellm-radio/%{name}-%{version}.tar.gz
+Patch0:		%{name}-Makefile.patch
+URL:		http://www.cs.auc.dk/~larsch/gkrellm-radio/
 BuildRequires:	gkrellm-devel
 Requires:	gkrellm >= 1.0.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,9 +29,12 @@ Um plugin GKrellM para controlar o BTTV radio a partir do GKrellM.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
-CFLAGS="%{rpmcflags}" %{__make} 
+%{__make} \
+	OPT="%{rpmcflags}" \
+	CC=%{__cc}
 
 %install
 rm -rf $RPM_BUILD_ROOT
