@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without  lirc    # without LIRC support
+%bcond_without	lirc    # without LIRC support
 #
 Summary:	BTTV tuners plugin for gkrellm
 Summary(pl):	Plugin gkrellm do radio BTTV
