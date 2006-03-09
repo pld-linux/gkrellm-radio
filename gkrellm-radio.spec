@@ -36,7 +36,7 @@ Um plugin GKrellM para controlar o BTTV radio a partir do GKrellM.
 %{__make} \
 	%{?with_lirc:WITH_LIRC=1} \
 	OPT="%{rpmcflags}" \
-	CC=%{__cc}
+	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
