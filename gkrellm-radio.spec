@@ -3,8 +3,8 @@
 %bcond_without	lirc    # without LIRC support
 #
 Summary:	BTTV tuners plugin for gkrellm
-Summary(pl):	Plugin gkrellm do radio BTTV
-Summary(pt_BR):	Plugin gkrellm para o BTTV radio
+Summary(pl.UTF-8):   Plugin gkrellm do radio BTTV
+Summary(pt_BR.UTF-8):   Plugin gkrellm para o BTTV radio
 Name:		gkrellm-radio
 Version:	2.0.4
 Release:	1.1
@@ -23,10 +23,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A GKrellM plugin which allows you to control BTTV tuners from within
 GKrellM.
 
-%description -l pl
-Plugin GKrellM pozwalaj±cy na sterowanie tunerami BTTV.
+%description -l pl.UTF-8
+Plugin GKrellM pozwalajÄ…cy na sterowanie tunerami BTTV.
 
-%description -l pt_BR
+%description -l pt_BR.UTF-8
 Um plugin GKrellM para controlar o BTTV radio a partir do GKrellM.
 
 %prep
