@@ -3,8 +3,8 @@
 %bcond_without	lirc    # without LIRC support
 #
 Summary:	BTTV tuners plugin for gkrellm
-Summary(pl.UTF-8):   Plugin gkrellm do radio BTTV
-Summary(pt_BR.UTF-8):   Plugin gkrellm para o BTTV radio
+Summary(pl.UTF-8):	Plugin gkrellm do radio BTTV
+Summary(pt_BR.UTF-8):	Plugin gkrellm para o BTTV radio
 Name:		gkrellm-radio
 Version:	2.0.4
 Release:	1.1
